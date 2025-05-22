@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>macOS App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="titlebar">
+    <div class="window-controls">
+    <button class="close" id="btn-close"></button>
+    <button class="minimize" id="btn-minimize"></button>
+    <button class="fullscreen" id="btn-maximize"></button>
+    </div>
+  </div>
+
+  <main class="content">
+    <h1>Welcome to macOS-style App</h1>
+    <p>This is an Electron app styled like macOS.</p>
+  </main>
+</body>
+
+<script>
+  document.getElementById('btn-close').addEventListener('click', () => {
+    window.electronAPI.controlWindow('close');
+  });
+
+  document.getElementById('btn-minimize').addEventListener('click', () => {
+    window.electronAPI.controlWindow('minimize');
+  });
+
+  document.getElementById('btn-maximize').addEventListener('click', () => {
+    window.electronAPI.controlWindow('maximize');
+  });
+</script>
+</html>
