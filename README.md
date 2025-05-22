@@ -22,6 +22,12 @@ Install the packages
 npm install
 ```
 
+Run the app
+
+```bash
+npm start
+```
+
 ## Examples
 
 <table>
