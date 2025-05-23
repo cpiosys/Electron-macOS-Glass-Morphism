@@ -7,13 +7,13 @@ Electron app with macOS glass morphism and traffic lights
 Download the code
 
 ```bash
-git clone https://github.com/electron/electron.git
+git clone https://github.com/cpiosys/Electron-macOS-Glass-Morphism.git
 ```
 
 CD into the directory
 
 ```bash
-cd electron
+cd Electron-macOS-Glass-Morphism
 ```
 
 Install the packages
